@@ -1,0 +1,46 @@
+.toggleSwitch_inpt{
+	height: 0;
+	width: 0;
+	visibility: hidden;
+	display: inline-block;
+}
+
+.toggleSwitch_lbl {
+	cursor: pointer;
+	text-indent: -9999px;
+	width: 40px;
+	height: 20px;
+	background: grey;
+	display: block;
+	border-radius: 50px;
+	position: relative;
+
+	margin: auto;
+	display: inline-block;
+
+}
+
+.toggleSwitch_lbl:after {
+	content: '';
+	position: absolute;
+	top: 3px;
+	left: 3px;
+	width: 14px;
+	height: 14px;
+	background: #fff;
+	border-radius: 7px;
+	transition: 0.3s;
+}
+
+.toggleSwitch_inpt:checked + .toggleSwitch_lbl {
+	background: #0a5a18;
+}
+
+.toggleSwitch_inpt:checked + .toggleSwitch_lbl:after {
+	left: calc(100% - 5px);
+	transform: translateX(-100%);
+}
+
+.toggleSwitch_lbl:active:after {
+	width: 25px;
+}

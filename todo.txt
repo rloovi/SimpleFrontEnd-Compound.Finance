@@ -1,0 +1,7 @@
+[ ] if wallet disconected --> tblAccMainInfo.values=0;
+[ ] balaye asset ha esm dashte bashe : example : account, All Markets
+[ ] kenar meghdar har daraee dar wallet masalan eth ya dai neveshe beshe. riz. ya masalan alamat $
+[ ] attention: Relative positioning of table rows and row groups is now supported. This site may need to be updated because it may depend on this feature having no effect.
+[ ] bayad dar mogeeyat haye mokhtalef(bedoon filter shekan, bedoon internet , ...) test beshe.
+[ ] vaghti chandbar talash mikone adad ha ro 2x neshoon mide
+[ ] delete collateral from borrowing tab.
