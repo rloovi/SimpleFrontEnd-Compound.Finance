@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Coffet</title>
+        <meta charset="uft-8">
+        <meta name="description" content="tozihat">
+        <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+        <link rel="stylesheet" href="/CSS/main.css">
+        <link rel="stylesheet" href="/CSS/tokenTable.css">
+        <link rel="stylesheet" href="/CSS/toggleSwitch.css">
+        <script src="/node_lib/web3.min.js"></script>
+        <script src="/node_lib/ethers.umd.js"></script>
+        <script src="/node_lib/ethers.umd.min.js"></script>
+        <script src="/JSs/MsgBoxHelper.js"></script>
+        <script src="/JSs/web3WalletHelper.js"></script>
+        <script src="/JSs/web3CompoundFinance.js"></script>
+        
+        
+
+    </head>
+</html>
+<body>
+    <div class="header">
+        <div style="display: inline-block ; padding: 20px 50px; font-family: 'Vladimir Script'; color: azure; font-weight: bold;" >
+            <h2>COFFET</h2>
+        </div>
+        <div style="display: inline-block ; padding: 20px 20px; position: absolute; right: 0px; width:fit-content;" >
+            <div id="divBlockchainInfo" class="blockchainInfo">
+            </div>
+            <div class="wallet" onclick="walletHelper_ConnectToWallet()">
+                <span id="spnWallet">Connect Wallet</span> 
+            </div>
+        </div>
+    </div>
+    <div class="leftBar">
+        <div style="display: block ; ; position: absolute; top: 0px; width: 100%;" >
+            <table style="width: 100%;">
+                <tr><td class="leftMenu"><a onclick="f1()">Assets overview</a></td></tr>
+                <tr><td class="leftMenu"><a onclick="viewTab_SupplyingAssets()">Supplying Assets</a></td></tr>
+                <tr><td class="leftMenu"><a onclick="viewTab_BorrowingAssets()">Borrowing Assets</a></td></tr>
+                <tr><td class="leftMenu"><a onclick="f1()">Claim Rewards</a></td></tr>
+            </table>
+        </div>
+        <div style="display: block ; ; position: absolute; bottom: 20px; width: 100%;">
+            <table id="tblAccMainInfo" style="width: 100%;">
+                <tr><td class="OutCaptionA">Supply Balance</td></tr>
+                <tr><td class="OutResultA">12.554 $</td></tr>
+                <tr><td class="OutCaptionA">Borrow Balance</td></tr>
+                <tr><td class="OutResultA">6.001 $</td></tr>
+                <tr><td class="OutCaptionA">COMP Balance</td></tr>
+                <tr><td class="OutResultA">0.00 $</td></tr>
+                <tr><td class="OutCaptionA">Borrow Limit</td></tr>
+                <tr><td class="OutResultA">8.1 $</td></tr>
+                <tr><td class="OutCaptionA">Used Limit</td></tr>
+                <tr><td class="OutResultA">45 %</td></tr>
+            </table>
+        </div>
+    </div>
+    <div class="footer">
+        merci
+    </div>
+    <div class="main" id="main">
+        <div id="div1" class="scrollableDiv" style="max-height: 270px;"></div>
+        <div id="div2" class="scrollableDiv" style="max-height: 330px;"></div>
+    </div>
+</body>
+<!-- -->
+<script>walletHelper_checkConnection()</script>
