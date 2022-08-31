@@ -91,11 +91,11 @@ async function compoundFinance_Init(chainId) {
     WEB3 = new Web3(PROVIDER);
 
     if (chainId == 1){ // Mainnet
-        filePath_Abi = "../contracts_info/compound_finance/mainnet_abi.json";
-        filePath_Addr = "../contracts_info/compound_finance/mainnet.json";
+        filePath_Abi = "./contracts_info/compound_finance/mainnet_abi.json";
+        filePath_Addr = "./contracts_info/compound_finance/mainnet.json";
     }else if (chainId == 5){ //Goerli
-        filePath_Abi = "../contracts_info/compound_finance/goerli_abi.json";
-        filePath_Addr = "../contracts_info/compound_finance/goerli.json";
+        filePath_Abi = "./contracts_info/compound_finance/goerli_abi.json";
+        filePath_Addr = "./contracts_info/compound_finance/goerli.json";
     }
 }
 

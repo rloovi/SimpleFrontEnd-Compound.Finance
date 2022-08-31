@@ -15,7 +15,7 @@ var chainNameDictionary={
 
 const walletHelper_ElmntAccId = "spnWallet";
 const walletHelper_ElmntBlckchnInfo = "divBlockchainInfo";
-const walletHelper_WaitGifAddr = "/images/img_wait1.png";
+const walletHelper_WaitGifAddr = "./images/img_wait1.png";
 
 function walletHelper_viewInfo() {
     const elmntAcc = document.getElementById(walletHelper_ElmntAccId);
@@ -24,7 +24,7 @@ function walletHelper_viewInfo() {
     elmntAcc.innerText = accountAddrMinimal;
     //---
     const elmntBlckchnInfo = document.getElementById(walletHelper_ElmntBlckchnInfo);
-    var blockchainLogoAddr = "/images/" + wallet_NetworkName + "_logo.png";
+    var blockchainLogoAddr = "./images/" + wallet_NetworkName + "_logo.png";
     var strHtml =  "<span>" + wallet_NetworkName + "</span>";
                     
     var img =  new Image(); 
