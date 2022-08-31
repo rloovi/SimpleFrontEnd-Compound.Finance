@@ -422,8 +422,13 @@ async function ChangeCollateralPos(id,cTokenAddress){
         ABIFunc = contract_Comptroller.methods.exitMarket(cTokenAddress).encodeABI();
     }
 
-    ShowMsgBox('Confirm your transaction');
+    ShowMsgBox('Confirm this transaction...','Set this asset collateral on/off');
     var txObject={from: wallet_ActiveAccountAddr, to:addr_Comptroller, data:ABIFunc};
-    const tx = await signer.sendTransaction(txObject);
+    try{
+        const tx = await signer.sendTransaction(txObject); //todo : this type of transactions must handle in wallethelper.
+    }catch(err){
+        console.log("error: " + err);
+    }
     HideMsgBox();
+    
 }
