@@ -97,6 +97,7 @@ async function compoundFinance_Init(chainId) {
         filePath_Abi = "./contracts_info/compound_finance/goerli_abi.json";
         filePath_Addr = "./contracts_info/compound_finance/goerli.json";
     }
+    console.log("path: " + filePath_Addr);
 }
 
 async function compoundFinance_getAllMarkets(chainId,AccAddress) {
